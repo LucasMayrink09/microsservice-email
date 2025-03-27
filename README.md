@@ -28,7 +28,8 @@ Execute o serviço:
 mvn spring-boot:run
 
 
-Como usar
+Como usar:
+
 Faça uma requisição POST para o endpoint /send-email com o seguinte payload:
 
 {
@@ -37,9 +38,7 @@ Faça uma requisição POST para o endpoint /send-email com o seguinte payload:
   "body": "Conteúdo do e-mail"
 }
 Exemplo de requisição usando cURL:
-bash
-Copiar
-Editar
+
 curl -X POST http://localhost:8080/send-email \
      -H "Content-Type: application/json" \
      -d '{
